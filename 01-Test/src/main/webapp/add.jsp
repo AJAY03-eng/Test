@@ -10,6 +10,7 @@
 <h2>Add Student</h2>
 
 <h3> ${succ} </h3>
+<h3>${failed}</h3>
 <form action="add" method="post">
  StudentID:<input type="studentid" name="studentid" id="studentid" required><br><br>
  name:<input type="name" name="name" id="name" required><br><br>

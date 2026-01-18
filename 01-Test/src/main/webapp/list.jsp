@@ -32,8 +32,8 @@
     try {
         con = ConnectionPool.giveConnection();
 
-        String sql = "SELECT studentid, name, email, phone, standard, address FROM users";
-        ps = con.prepareStatement(sql);
+        String fetch = "SELECT studentid, name, email, phone, standard, address FROM users";
+        ps = con.prepareStatement(fetch);
         rs = ps.executeQuery();
 
         while (rs.next()) {
@@ -55,6 +55,6 @@
 %>
 
 </table>
-
+ <a href="index.jsp">BACK TO ADD PAGE</a>
 </body>
 </html>
